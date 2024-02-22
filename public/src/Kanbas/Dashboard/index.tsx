@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import './index.css';
 import { FaSquarePen, FaEllipsisVertical } from 'react-icons/fa6';
+import React from "react";
 
 const Dashboard = () => {
     const courses = db.courses;
