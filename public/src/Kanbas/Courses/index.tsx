@@ -8,6 +8,8 @@ import Breadcrumb from "./breadcrumb";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "./index.css"
+import React from "react";
+
 function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);

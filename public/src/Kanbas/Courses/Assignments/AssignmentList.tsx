@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FaGripVertical, FaCaretDown, FaPlus, FaEllipsisVertical, FaFilePen, FaCircleCheck } from "react-icons/fa6";
+import React from "react";
 
 const AssignmentList = () => {
     const { courseId } = useParams();

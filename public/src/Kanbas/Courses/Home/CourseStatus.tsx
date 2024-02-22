@@ -1,5 +1,6 @@
 import './index.css'
 import { FaBan, FaCircleCheck, FaFileImport, FaRightFromBracket, FaCrosshairs, FaChartSimple, FaBullhorn, FaBell, FaCalendar, FaCircleInfo, FaXmark } from "react-icons/fa6";
+import React from 'react';
 
 const CourseStatus = () => {
     return (

@@ -1,5 +1,6 @@
 import "./index.css"
 import { FaFileImport, FaFileExport, FaGear, FaMagnifyingGlass } from "react-icons/fa6";
+import React from "react";
 
 const GradesTopBar = () => {
     return (

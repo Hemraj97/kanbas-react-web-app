@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaEllipsisVertical, FaCircleCheck } from 'react-icons/fa6';
 
 const ModulesTopRow = () => {

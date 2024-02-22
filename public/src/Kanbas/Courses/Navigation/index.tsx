@@ -1,6 +1,7 @@
 import { Link, useParams, useLocation } from 'react-router-dom';
 import { FaEyeSlash } from 'react-icons/fa';
 import './index.css';
+import React from 'react';
 
 const CourseNavigation = () => {
     const links = [
