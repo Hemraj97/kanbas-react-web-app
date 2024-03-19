@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
 import { FaCircleUser, FaGaugeHigh, FaBook, FaCalendarDays, FaEnvelopeOpenText, FaClock, FaNetworkWired, FaRightFromBracket, FaCircleQuestion } from 'react-icons/fa6';
+import React from "react";
 
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];

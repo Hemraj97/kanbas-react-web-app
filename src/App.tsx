@@ -3,11 +3,14 @@ import Labs from "./Labs";
 import Kanbas from './Kanbas';
 import HelloWorld from './Labs/a3/HelloWorld';
 import { HashRouter } from 'react-router-dom';
-import {Route, Routes, Navigate} from 'react-router'
+import {Route, Routes} from 'react-router'
 import "./index.css"
+import { Provider } from 'react-redux';
+import store from "./Kanbas/Store"
 
 function App() {
    return (
+    <Provider store={store}>
     <HashRouter>
       <div>
         <Routes>
@@ -18,6 +21,7 @@ function App() {
         </Routes>
       </div>
       </HashRouter>
+      </Provider>
     
       
 );}

@@ -28,7 +28,7 @@ function Grades() {
                             <th>Student Name</th>
                             {assignments.map((assignment) => (
                                 <th key={assignment._id}>
-                                    {assignment.title}
+                                    {assignment.description}
                                     <br />
                                     Out of {assignment.points}
                                 </th>

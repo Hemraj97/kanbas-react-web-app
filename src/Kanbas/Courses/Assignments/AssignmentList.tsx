@@ -2,10 +2,13 @@ import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FaGripVertical, FaCaretDown, FaPlus, FaEllipsisVertical, FaFilePen, FaCircleCheck } from "react-icons/fa6";
 import React from "react";
+import { useSelector } from "react-redux";
+import { AssignmentState } from "../../Store";
 
 const AssignmentList = () => {
     const { courseId } = useParams();
-    const assignments = db.assignments;
+    const assignments = useSelector((state: AssignmentState) => state.assignmentReducer.assignments);
+    const assignment = useSelector((state: AssignmentState) => state.assignmentReducer.assignment);
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
     return (
@@ -32,7 +35,7 @@ const AssignmentList = () => {
                                         key={assignment._id}
                                         to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
                                         className="assignment-link">
-                                        {assignment.title}
+                                        {assignment.description}
                                     </Link>
                                 </div>
                                 <small className="text-body-secondary">{assignment.week}</small>
