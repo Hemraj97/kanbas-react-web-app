@@ -6,7 +6,6 @@ import "./index.css";
 const Assignments = () => {
     return (
         <div>
-            <AssignmentsTopBar />
             <AssignmentList />
         </div>
     )
